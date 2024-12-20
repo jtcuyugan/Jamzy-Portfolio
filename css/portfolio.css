@@ -197,7 +197,7 @@ h1.title-about{
 img.divider1{
     margin-top: -20rem; /* Adjust this value as needed to achieve the desired overlap */
     margin-bottom: -5rem;
-    z-index: -2;
+    z-index: 2;
     position: relative;
     top: 80%
 }
@@ -205,7 +205,7 @@ img.divider1{
 img.divider2{
     margin-top: -20rem; /* Adjust this value as needed to achieve the desired overlap */
     margin-bottom: -20rem;
-    z-index: -2;
+    z-index: 2;
     position: relative;
     top: 80%
 }
