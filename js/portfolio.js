@@ -3,16 +3,19 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('header.html')
         .then(response => response.text())
         .then(data => {
-            document.querySelector('header').innerHTML += data;
-            // Add event listeners to the newly loaded navbar links
-            const headerLinks = document.querySelectorAll('header nav a');
-            headerLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const target = document.querySelector(link.getAttribute('href'));
-                    target.scrollIntoView({ behavior: 'smooth' });
+            const headerElement = document.querySelector('header');
+            if (headerElement) {
+                headerElement.innerHTML += data;
+                // Add event listeners to the newly loaded navbar links
+                const headerLinks = document.querySelectorAll('header nav a');
+                headerLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const target = document.querySelector(link.getAttribute('href'));
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    });
                 });
-            });
+            }
         });
 
     // Load the footer
