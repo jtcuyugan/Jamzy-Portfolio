@@ -77,6 +77,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Initialize preview images
         updatePreviewImages();
+
+        // Adjust carousel item width for smaller screens
+        function adjustCarouselItemWidth() {
+            const itemWidth = window.innerWidth < 768 ? window.innerWidth : items[0].offsetWidth;
+            items.forEach(item => {
+                item.style.width = `${itemWidth}px`;
+            });
+        }
+
+        // Adjust carousel item width on load and resize
+        adjustCarouselItemWidth();
+        window.addEventListener('resize', adjustCarouselItemWidth);
     }
 
 // Carousel js
