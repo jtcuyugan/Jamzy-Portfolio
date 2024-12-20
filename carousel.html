@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="css/carousel.css">
+</head>
+<body>
+    <div class="container">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <input type="radio" name="slider" id="item-4">
+    <div class="cards">
+        <label class="card" for="item-1" id="song-1">
+        <img src="media/tsubaki.png" alt="song">
+        </label>
+        <label class="card" for="item-2" id="song-2">
+        <img src="media/tinosite.png" alt="song">
+        </label>
+        <label class="card" for="item-3" id="song-3">
+        <img src="media/datatransform.png" alt="song">
+        </label>
+        <label class="card" for="item-4" id="song-4">
+        <img src="media/tabi.png" alt="song">
+        </label>
+    </div>
+    <div class="player">
+        <div class="upper-part">
+        <div class="info-area" id="test">
+            <label class="song-info" id="song-info-1">
+            <div class="title">Tsubaki ERP System</div>
+            <div class="sub-line">
+                <div class="subtitle">A custom ERP system created for ACMR Services using Laravel and React</div>
+            </div>
+            </label>
+            <label class="song-info" id="song-info-2">
+            <div class="title">Master Production Planning and Job Order System</div>
+            <div class="sub-line">
+                <div class="subtitle">A master production planning and job order system developed in Frappe for Tino Suits.</div>
+            </div>
+            </label>
+            <label class="song-info" id="song-info-3">
+            <div class="title">Azure-Connected Data Cleaner</div>
+            <div class="sub-line">
+                <div class="subtitle">A Python data cleaner and transformer that can retrieve and upload to an Azure Blob Storage</div>
+            </div>
+            </label>
+            <label class="song-info" id="song-info-4">
+                <div class="title">Talk-A-Bot-It</div>
+                <div class="sub-line">
+                    <div class="subtitle">A mood tracker and mental wellness application with an AI chatbot designed in Figma. </div>
+                </div>
+                </label>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
