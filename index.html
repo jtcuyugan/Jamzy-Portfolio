@@ -60,6 +60,50 @@
         <!-- PROJECTS -->
         <section class="projects" id="projects">
             <h1 class="title">PROJECT</h1>
+            <!-- LANGUAGES/STACK -->
+            <div class="language">
+                <marquee behavior="scroll" direction="left" scrollamount="5" loop="true">
+                    <div class="language-inner">
+                        <div class="language-item">
+                            <img src="media/htmllogo.png" alt="HTML">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/csslogo.png" alt="CSS">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/jslogo.png" alt="JavaScript">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/pylogo.png" alt="Python">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/javalogo.png" alt="Java">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/laralogo.png" alt="Laravel">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/reactlogo.png" alt="React">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/rlogo.png" alt="R">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/mysqllogo.png" alt="MySQL">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/phplogo.png" alt="PHP">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/dotnetlogo.png" alt="DotNet">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/figmalogo.png" alt="Figma">
+                        </div>
+                    </div>
+                </marquee>
+            </div>
+            <br><br>
             <!-- PROJECT CAROUSEL -->
             <div class="container">
                 <input type="radio" name="carousel" id="project-1" checked>
@@ -105,64 +149,16 @@
                     </label>
                 </div>
             </div>
-            <br>
-            <!-- LANGUAGES/STACK -->
-            <div class="language">
-                <marquee behavior="scroll" direction="left" scrollamount="5" loop="true">
-                    <div class="language-inner">
-                        <div class="language-item">
-                            <img src="media/htmllogo.png" alt="HTML">
-                        </div>
-                        <div class="language-item">
-                            <img src="media/csslogo.png" alt="CSS">
-                        </div>
-                        <div class="language-item">
-                            <img src="media/jslogo.png" alt="JavaScript">
-                        </div>
-                        <div class="language-item">
-                            <img src="media/pylogo.png" alt="Python">
-                        </div>
-                        <div class="language-item">
-                            <img src="media/javalogo.png" alt="Java">
-                        </div>
-                        <div class="language-item">
-                            <img src="media/laralogo.png" alt="Laravel">
-                        </div>
-                        <div class="language-item">
-                            <img src="media/reactlogo.png" alt="React">
-                        </div>
-                        <div class="language-item">
-                            <img src="media/rlogo.png" alt="R">
-                        </div>
-                        <div class="language-item">
-                            <img src="media/mysqllogo.png" alt="MySQL">
-                        </div>
-                        <div class="language-item">
-                            <img src="media/phplogo.png" alt="PHP">
-                        </div>
-                        <div class="language-item">
-                            <img src="media/dotnetlogo.png" alt="DotNet">
-                        </div>
-                        <div class="language-item">
-                            <img src="media/figmalogo.png" alt="Figma">
-                        </div>
-                    </div>
-                </marquee>
-            </div>
         </section>
-        <br><br><br><br><br><br><br><br><br><br><br>
         <!-- CONTACT ME -->
         <section class="contact" id="contact">
             <img src="media/logo.png" alt="Jam's Portfolio Logo" class="logo" />
             <br><br>
             <h1 class="title">CONTACT ME</h1>
             <form>
-                <input type="text" id="name" name="name" value="Name" required>
-                
-                <input type="email" id="email" name="email" value="Email Address" required>
-                
-                <textarea id="message" name="message" rows="2" value="Message" required>Message</textarea>
-                
+                <input type="text" id="name" name="name" placeholder="Name" required pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces.">
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <textarea id="message" name="message" rows="2" placeholder="Message" required minlength="10" maxlength="250" title="Message should be between 10 and 250 characters long."></textarea>
                 <button type="submit">Send</button>
             </form>
         </section>
