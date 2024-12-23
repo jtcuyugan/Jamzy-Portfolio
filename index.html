@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jamzy's Portfolio</title>
     <link rel="stylesheet" href="css/portfolio.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 </head>
 <body>
@@ -22,7 +18,7 @@
             <ul>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#projects">PROJECT</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
@@ -52,7 +48,7 @@
                         <img src="media/linkedin.png" alt="LinkedIn" class="social-icon">
                     </a>
                     <a href="media/resume.pdf" target="_blank">
-                        <img src="media/resume.pdf" alt="Resume" class="social-icon">
+                        <img src="media/resume.png" alt="Resume" class="social-icon">
                     </a>
                 </div>
             </div>
@@ -64,120 +60,114 @@
         <!-- PROJECTS -->
         <section class="projects" id="projects">
             <h1 class="title">PROJECT</h1>
-                <div class="container">
-                    <input type="radio" name="slider" id="item-1" checked>
-                    <input type="radio" name="slider" id="item-2">
-                    <input type="radio" name="slider" id="item-3">
-                    <input type="radio" name="slider" id="item-4">
+            <!-- LANGUAGES/STACK -->
+            <div class="language">
+                <marquee behavior="scroll" direction="left" scrollamount="5" loop="true">
+                    <div class="language-inner">
+                        <div class="language-item">
+                            <img src="media/htmllogo.png" alt="HTML">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/csslogo.png" alt="CSS">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/jslogo.png" alt="JavaScript">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/pylogo.png" alt="Python">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/javalogo.png" alt="Java">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/laralogo.png" alt="Laravel">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/reactlogo.png" alt="React">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/rlogo.png" alt="R">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/mysqllogo.png" alt="MySQL">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/phplogo.png" alt="PHP">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/dotnetlogo.png" alt="DotNet">
+                        </div>
+                        <div class="language-item">
+                            <img src="media/figmalogo.png" alt="Figma">
+                        </div>
+                    </div>
+                </marquee>
+            </div>
+            <br><br>
+            <!-- PROJECT CAROUSEL -->
+            <div class="container">
+                <input type="radio" name="carousel" id="project-1" checked>
+                <input type="radio" name="carousel" id="project-2">
+                <input type="radio" name="carousel" id="project-3">
+                <input type="radio" name="carousel" id="project-4">
+                <input type="radio" name="carousel" id="project-5">
                 <div class="cards">
-                    <label class="card" for="item-1" id="song-1">
-                    <img src="media/tsubaki.png" alt="song">
-                    </label>
-                    <label class="card" for="item-2" id="song-2">
-                    <img src="media/tinosite.png" alt="song">
-                    </label>
-                    <label class="card" for="item-3" id="song-3">
-                    <img src="media/datatransform.png" alt="song">
-                    </label>
-                    <label class="card" for="item-4" id="song-4">
-                    <img src="media/tabi.png" alt="song">
-                    </label>
-                </div>
-                </div>
-                <div class="player">
-                    <div class="upper-part">
-                    <div class="info-area" id="test">
-                        <label class="song-info" id="song-info-1">
-                        <div class="title">Tsubaki ERP System</div>
-                        <div class="sub-line">
+                    <label class="card" for="project-1" id="project-1-label">
+                        <img src="media/tsubaki.png" alt="project">
+                        <div class="hover-description">
+                            <div class="title">Tsubaki ERP System</div>
                             <div class="subtitle">A custom ERP system created for ACMR Services using Laravel and React</div>
                         </div>
-                        </label>
-                        <label class="song-info" id="song-info-2">
-                        <div class="title">Master Production Planning and Job Order System</div>
-                        <div class="sub-line">
+                    </label>
+                    <label class="card" for="project-2" id="project-2-label">
+                        <img src="media/tinosite.png" alt="project">
+                        <div class="hover-description">
+                            <div class="title">Master Production Planning & Job Order System</div>
                             <div class="subtitle">A master production planning and job order system developed in Frappe for Tino Suits.</div>
                         </div>
-                        </label>
-                        <label class="song-info" id="song-info-3">
-                        <div class="title">Azure-Connected Data Cleaner</div>
-                        <div class="sub-line">
+                    </label>
+                    <label class="card" for="project-3" id="project-3-label">
+                        <img src="media/datatransform.png" alt="project">
+                        <div class="hover-description">
+                            <div class="title">Azure-Connected Data Cleaner</div>
                             <div class="subtitle">A Python data cleaner and transformer that can retrieve and upload to an Azure Blob Storage</div>
                         </div>
-                        </label>
-                        <label class="song-info" id="song-info-4">
+                    </label>
+                    <label class="card" for="project-4" id="project-4-label">
+                        <img src="media/tabi.png" alt="project">
+                        <div class="hover-description">
                             <div class="title">Talk-A-Bot-It</div>
-                            <div class="sub-line">
-                                <div class="subtitle">A mood tracker and mental wellness application with an AI chatbot designed in Figma. </div>
-                            </div>
-                            </label>
-                    </div>
-                    </div>
-                </div>
-        </section>
-        <br>
-        <!-- LANGUAGES/STACK -->
-            <div class="language">
-                <div class="language-inner">
-                    <div class="language-item">
-                        <img src="media/htmllogo.png" alt="HTML">
-                    </div>
-                    <div class="language-item">
-                        <img src="media/csslogo.png" alt="CSS">
-                    </div>
-                    <div class="language-item">
-                        <img src="media/jslogo.png" alt="JavaScript">
-                    </div>
-                    <div class="language-item">
-                        <img src="media/pylogo.png" alt="Python">
-                    </div>
-                    <div class="language-item">
-                        <img src="media/javalogo.png" alt="Java">
-                    </div>
-                    <div class="language-item">
-                        <img src="media/laralogo.png" alt="Laravel">
-                    </div>
-                    <div class="language-item">
-                        <img src="media/reactlogo.png" alt="React">
-                    </div>
-                    <div class="language-item">
-                        <img src="media/rlogo.png" alt="R">
-                    </div>
-                    <div class="language-item">
-                        <img src="media/mysqllogo.png" alt="MySQL">
-                    </div>
-                    <div class="language-item">
-                        <img src="media/phplogo.png" alt="PHP">
-                    </div>
-                    <div class="language-item">
-                        <img src="media/dotnetlogo.png" alt="DotNet">
-                    </div>
-                    <div class="language-item">
-                        <img src="media/figmalogo.png" alt="Figma">
-                    </div>
-                    
+                            <div class="subtitle">A mood tracker and mental wellness application with an AI chatbot designed in Figma.</div>
+                        </div>
+                    </label>
+                    <label class="card" for="project-5" id="project-5-label">
+                        <img src="media/forecast.png" alt="project">
+                        <div class="hover-description">
+                            <div class="title">MRT-3 Ridership Forecasting</div>
+                            <div class="subtitle">Utilizing SHAP XAI and a hybrid Prophet and LSTM approach to forecast the ridership of selected MRT-3 stations</div>
+                        </div>
+                    </label>
                 </div>
             </div>
-        <br><br><br><br><br><br><br><br><br><br><br>
+        </section>
         <!-- CONTACT ME -->
         <section class="contact" id="contact">
             <img src="media/logo.png" alt="Jam's Portfolio Logo" class="logo" />
             <br><br>
             <h1 class="title">CONTACT ME</h1>
             <form>
-                <input type="text" id="name" name="name" value="Name" required>
-                
-                <input type="email" id="email" name="email" value="Email Address" required>
-                
-                <textarea id="message" name="message" rows="2" value="Message" required>Message</textarea>
-                
+                <input type="text" id="name" name="name" placeholder="Name" required pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces.">
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <textarea id="message" name="message" rows="2" placeholder="Message" required minlength="10" maxlength="250" title="Message should be between 10 and 250 characters long."></textarea>
                 <button type="submit">Send</button>
             </form>
         </section>
     </main>
     <img src="media/bottomblob.png" alt="Bottom Blob" class="bottom-blob" />
     <!-- Footer will be included from footer.html -->
-    <footer></footer>
+    <footer>
+        <p>&copy; 2024 Jamzy Cuyugan. All rights reserved.</p>
+    </footer>
     <script src="portfolio.js"></script>
 </body>
 </html>
