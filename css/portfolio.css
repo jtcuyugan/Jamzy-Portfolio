@@ -195,7 +195,7 @@ img.divider1 {
 img.divider2 {
     margin-top: -20rem; /* Adjust this value as needed to achieve the desired overlap */
     margin-bottom: -20rem;
-    z-index: 2;
+    z-index: -2;
     position: relative;
     top: 80%;
 }
